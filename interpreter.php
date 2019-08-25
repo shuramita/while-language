@@ -119,9 +119,9 @@ class Interpreter {
 
             if($char == " " || $char == _END || in_array($char,SPECIAL_CHARS) || in_array($char,Opa) || in_array($char,Opr)) {
 //                var_dump('CHAR',$char);
-                $tokenString = substr($this->source,$currentIndex,$index-$currentIndex);
+                $stringToken = substr($this->source,$currentIndex,$index-$currentIndex);
                 $currentIndex = $index;
-                $stringToken = $tokenString; //str_replace(_END,"",);
+//                $stringToken = $tokenString; //str_replace(_END,"",);
 //                var_dump($stringToken);
                 $token = Token::classify($stringToken);
                 if($token) {
