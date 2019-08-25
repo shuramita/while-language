@@ -1,2 +1,5 @@
 # while-language
-While Language
+
+`php 
+run php index.php
+` to execute the code
