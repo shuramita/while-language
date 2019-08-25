@@ -1,5 +1,3 @@
 # while-language
 
-`php 
-run php index.php
-` to execute the code
+run `php index.php` to execute the code
